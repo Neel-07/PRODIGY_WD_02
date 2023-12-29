@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #008080; /* Vibrant color */
 }
 
 .stopwatch {
@@ -11,6 +11,10 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     display: inline-block;
     margin: 20px;
+    position: absolute; /* Center the box */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .time {
@@ -23,10 +27,12 @@ button {
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
+    background-color: #FF6347; /* Vibrant color */
+    color: #fff; /* Text color */
 }
 
 button:hover {
-    background-color: #ddd;
+    background-color: #FF4500; /* Darker shade on hover */
 }
 
 ul {
