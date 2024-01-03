@@ -1,7 +1,7 @@
 <h1 align="center">Stopwatch Project
 </h1>
 <h2 align="center">
-  <a href="https://neel-07.github.io/PRODIGY_WD_02/">Visit the website </a>
+  <a href="https://neel-07.github.io/Stopwatch/">Visit the website </a>
 </h2>
 
 
