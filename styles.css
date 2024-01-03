@@ -1,25 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    background-color: #008080; /* Vibrant color */
+    background-color: #E0FFFF; /* Light Cyan */
 }
 
 .stopwatch {
-    background-color: #fff;
+    background-color: #F0F8FF; /* Alice Blue */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     display: inline-block;
     margin: 20px;
-    position: absolute; /* Center the box */
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: transform 0.3s ease; /* Smooth movement */
+}
+
+.stopwatch:hover {
+    transform: translate(-50%, -48%); /* Slight lift on hover */
 }
 
 .time {
     font-size: 36px;
     margin-bottom: 10px;
+    color: #696969; /* Dim Gray */
 }
 
 button {
@@ -27,15 +35,27 @@ button {
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
-    background-color: #FF6347; /* Vibrant color */
-    color: #fff; /* Text color */
+    background-color: #FF7F50; /* Coral */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth color change and lift */
 }
 
 button:hover {
     background-color: #FF4500; /* Darker shade on hover */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:active {
+    transform: translateY(1px); /* Push down on click */
 }
 
 ul {
     list-style: none;
     padding: 0;
+    color: #696969; /* Dim Gray */
 }
+
